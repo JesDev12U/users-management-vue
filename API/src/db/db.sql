@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS users_management;
+CREATE DATABASE users_management;
+USE users_management;
+
+CREATE TABLE users (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  cellphone VARCHAR(10) UNIQUE NOT NULL,
+  curp VARCHAR(255) UNIQUE NOT NULL,
+  born_date DATE NOT NULL,
+  email VARCHAR(255) UNIQUE NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
